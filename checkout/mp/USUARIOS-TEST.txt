@@ -1,0 +1,5 @@
+VENDEDOR:
+{"id":658774491,"nickname":"TESTVD9ROR6E","password":"qatest6539","site_status":"active","email":"test_user_63715183@testuser.com"}
+
+COMPRADOR:
+{"id":658774600,"nickname":"TETE844580","password":"qatest7014","site_status":"active","email":"test_user_54886063@testuser.com"}

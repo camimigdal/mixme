@@ -1,0 +1,24 @@
+RewriteEngine On
+
+
+	
+	RewriteRule ^productos/([a-zA-Z_-]+)/([a-zA-Z_-]+)/([a-zA-Z_-]+)/Color=([a-zA-Z_-]+)$ productos.php?cat=$3&col=$4 [L]
+	RewriteRule ^productos/([a-zA-Z_-]+)/([a-zA-Z_-]+)/Color=([a-zA-Z_-]+)$ productos.php?cat=$2&col=$3 [L]
+	RewriteRule ^productos/([a-zA-Z_-]+)/Color=([a-zA-Z_-]+)$ productos.php?cat=$1&col=$2 [L]
+	RewriteRule ^productos/Color=([a-zA-Z_-]+)$ productos.php?col=$1 [L]
+
+	RewriteRule ^productos/([a-zA-Z_-]+)/([a-zA-Z_-]+)/([a-zA-Z_-]+)/$ productos.php?cat=$3 [L]
+	RewriteRule ^productos/([a-zA-Z_-]+)/([a-zA-Z_-]+)/$ productos.php?cat=$2 [L]
+	RewriteRule ^productos/([a-zA-Z_-]+)/$ productos.php?cat=$1 [L]
+	
+	RewriteRule ^productos/$ productos.php [L]
+
+	RewriteRule ^producto/(.+)$ ficha.php?id=$1 [L]
+	
+	RewriteRule ^mixer/([a-zA-Z_-]+)/$ mixer.php?type=$1 [L]
+	RewriteRule ^mixer/([a-zA-Z_-]+)/order([0-9]+)$ mixer.php?type=$1&order=$2 [L]
+	RewriteRule ^mixer/$ mixer.php [L]
+
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond %{REQUEST_FILENAME}.php -f
+	RewriteRule ^(.*)$ $1.php

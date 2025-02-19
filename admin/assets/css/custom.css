@@ -1,0 +1,110 @@
+/* Write your custom CSS here */
+
+.list-iconos li {
+    padding: 3px 0;
+    font-size: 1.2em;
+}
+
+.list-archivo li {
+    vertical-align: top;
+}
+
+.list-archivo i {
+    font-size: 5em;
+}
+
+.title-graf {
+    font-weight: bold;
+}
+
+.badge {
+    width: 18px;
+}
+
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th {
+    vertical-align: middle;
+}
+
+.panel-ventas {
+    margin-bottom: 0;
+}
+
+.panel.panel-blue.panel-ventas:hover {
+    background: #08A7C3;
+}
+
+.panel.panel-purple.panel-ventas:hover {
+    background: #6a5fac
+}
+
+.panel.panel-yellow.panel-ventas:hover {
+    background: #e8bf40;
+}
+
+.panel.panel-green.panel-ventas:hover {
+    background: #1DB198;
+}
+
+.panel-ventas a:hover {
+    text-decoration: none;
+}
+
+.progress {
+    background-color: #fff;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .4);
+}
+
+.badge-menu {
+    position: absolute;
+    left: 50%;
+    z-index: 100;
+    top: 6px;
+}
+
+.icon-cart-tabla {
+    display: block;
+    padding: 8px 0;
+}
+
+.icon-cart-tabla .badge {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    z-index: 100;
+}
+
+.table-responsive.project-stats {
+    overflow-x: unset;
+}
+
+.weather-day {
+    text-align: left !important;
+}
+
+.productos-orden {
+    margin: 15px 0 0;
+    padding: 15px 0 0;
+    border-top: 1px solid #f1f1f1;
+}
+
+.dropdown-menu {
+    z-index: 30000 !important;
+}
+
+.messages {
+    max-height: none;
+}
+
+.inbox-widget .inbox-item .inbox-item-date {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #f25656;
+    font-size: 16px;
+}
