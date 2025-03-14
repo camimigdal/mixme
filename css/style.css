@@ -1,0 +1,297 @@
+/* Definición de la fuente Olivier */
+@font-face {
+    font-family: 'Olivier';
+    src: url('../fonts/olivier_demo 2.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Reglas de tipografía para aplicar Nunito */
+body, 
+p, 
+.btn, 
+input, 
+textarea, 
+select, 
+.form-control, 
+.card-text, 
+.nav-link,
+.dropdown-item {
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Aplicar Olivier específicamente a los títulos */
+.mezclador h2,
+.about-text h2,
+.section-title h2 {
+    font-family: 'Olivier', cursive !important;
+    /* Ajustar tamaño y peso según sea necesario */
+    font-weight: normal;
+}
+
+/* Asegurarse de que el título About us use Olivier */
+.about-us .about-text h2 {
+    font-family: 'Olivier', cursive !important;
+}
+
+/* Estilos para Nuestros Packs */
+.nuestros-packs {
+    padding: 60px 0;
+    background: #fff;
+}
+
+.section-title {
+    margin-bottom: 40px;
+    font-family: 'Your-Font', sans-serif;
+}
+
+.icon-title {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.pack-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.pack-card:hover {
+    transform: translateY(-10px);
+}
+
+.pack-card img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.pack-footer {
+    padding: 15px;
+    text-align: center;
+}
+
+.btn-quiero {
+    background-color: #8E44AD;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-quiero:hover {
+    background-color: #703688;
+    transform: scale(1.05);
+}
+
+/* Estilos actualizados para la sección About Us */
+.about-us {
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    background-color: rgba(172, 96, 168, 1);
+    margin-top: 0;
+}
+
+.about-us .row {
+    margin: 0;
+    display: flex;
+    align-items: strech;
+}
+
+.about-text {
+    background-color: rgba(172, 96, 168, 1);
+    color: white;
+    padding: 120px 120px 120px 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    min-height: 550px;
+}
+
+.about-text h2 {
+    font-size: 4rem;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: 300;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    padding-top: 60px;
+    padding-left: 120px;
+}
+
+.about-text p {
+    font-size: 1.4rem;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    padding-left: 120px;
+    padding-right: 130px;
+}
+
+.about-image {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    height: auto; /* Cambiado a auto */
+    min-height: 0; /* Eliminado min-height */
+    flex: 1; /* Añadido flex: 1 para que ocupe todo el espacio disponible */
+}
+
+.about-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/AboutUs.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 200px 0 0 200px;
+}
+
+/* Estilos para el botón "Conocenos más" */
+.btn-consulta {
+    background-color: #f8e9d2;
+    color: #333;
+    font-weight: bold;
+    padding: 15px 40px; /* Aumentado el padding para hacer el botón más grande */
+    border-radius: 30px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    align-self: flex-start;
+    font-size: 1.2rem; /* Aumentado el tamaño de la fuente */
+    border: none;
+    margin-left: 120px;
+    text-transform: uppercase; /* Opcional: texto en mayúsculas */
+    letter-spacing: 1px; /* Opcional: espaciado entre letras */
+}
+
+.btn-consulta:hover {
+    background-color: #f0d9b5;
+    transform: translateY(-3px);
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra al pasar el cursor */
+}
+
+@media (max-width: 768px) {
+    .about-text {
+        padding: 40px 30px 40px 60px;
+    }
+    
+    .about-text h2,
+    .about-text p,
+    .btn-consulta {
+        padding-left: 20px;
+        margin-left: 20px;
+    }
+    
+    .about-text h2 {
+        padding-top: 30px;
+        font-size: 3rem;
+    }
+    
+    .about-image {
+        height: 350px;
+    }
+    
+    .about-image::before {
+        border-radius: 150px 0 0 150px;
+    }
+} 
+/* Estilos para la sección Creadores de sabores */
+.mezclador {
+    padding: 60px 0 30px 0;
+    background-color: #fff;
+}
+
+.mezclador h2 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 3rem; 
+    line-height: 1.2;
+    font-weight: normal; 
+    color: rgb(0, 0, 0); 
+}
+
+.mezclador .pack-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.mezclador .pack-card:hover {
+    transform: translateY(-10px);
+}
+
+.mezclador .pack-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.mezclador .card-body {
+    padding: 15px;
+    background-color: rgba(172, 96, 168, 1);
+    border-radius: 0
+}
+
+.mezclador .btn-quiero {
+    background-color: rgba(172, 96, 168, 1);
+    color: white;
+    border: none;
+    padding: 8px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    width: 100%;
+    text-align: center;
+}
+
+.mezclador .btn-quiero:hover {
+    background-color: rgba(142, 76, 138, 1);
+    color: white;
+    text-decoration: none;
+}
+
+/* Restaurar estilos originales para los botones del Market */
+.btn-comprar, 
+#productos .btn-quiero {
+    background-color: #8E44AD; /* Color original */
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    width: auto; /* Ancho automático en lugar de 100% */
+}
+
+.btn-comprar:hover,
+#productos .btn-quiero:hover {
+    background-color: #703688;
+    transform: scale(1.05);
+    color: white;
+    text-decoration: none;
+}
+
+.section-title h2 {
+    font-size: 3.5rem; /* Aumentado el tamaño de la fuente */
+    line-height: 1.2; /* Ajustado el interlineado */
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: normal; /* Aseguramos que el peso de la fuente sea normal */
+    color: rgba(172, 96, 168, 1); /* Color violeta para coincidir con el tema */
+}

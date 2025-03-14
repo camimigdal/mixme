@@ -61,7 +61,7 @@ if (!$logueado=$objLog->login_check()) {
                                 <br>
                                 <section id="signin">
                                 <div class="alert alert-danger" role="alert">
-                                La <strong>compra mínima</strong> mayorista es de <strong>$50.000</strong>.
+                                La <strong>compra mínima</strong> mayorista es de <strong>$180.000</strong>.
                                 </div>
                                     <form class="form-signin" method="post">
                                         <input type="hidden" name="<?php echo $token_id; ?>" value="<?php echo $token_value; ?>" />

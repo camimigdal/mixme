@@ -4,7 +4,7 @@ session_start();
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', 'root');
 define('DB_HOST', 'localhost');
-define('DB_NAME', 'bd_mixme');
+define('DB_NAME', 'mixme');
 
 // define('DB_USERNAME', 'zuaibkjh_webmaster');
 // define('DB_PASSWORD', 'j8)}H~7xqJ]y');

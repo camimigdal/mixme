@@ -43,11 +43,11 @@
                                     <div class="datos-contacto">
                                         <div class="d-flex align-items-center my-3">
                                             <div class="pr-3 text-primary text-center"><i class="fab fa-whatsapp fa-2x"></i></div>
-                                            <div> 11-3653-3648</div>
+                                            <div> +54 9 11 5619 6815 (minorista) </div>
                                         </div>
                                         <div class="d-flex align-items-center my-3">
-                                            <div class="pr-3 text-primary text-center"><svg class="feather fa-lg"><use xlink:href="<?php echo WEB_ROOT ?>img/feather-sprite.svg#phone"/></svg></div>
-                                            <div> 11-5619-6815</div>
+                                            <div class="pr-3 text-primary text-center"><i class="fab fa-whatsapp fa-2x"></i></div>
+                                            <div> +54 9 11 3068 8984 (mayorista) </div>
                                         </div>
                                         <div class="d-flex align-items-center my-3">
                                             <div class="pr-3 text-primary text-center"><svg class="feather fa-lg"><use xlink:href="<?php echo WEB_ROOT ?>img/feather-sprite.svg#mail"/></svg></div>
@@ -55,15 +55,13 @@
                                         </div>
                                         <div class="d-flex my-3">
                                             <div class="pr-3 text-primary text-center"><svg class="feather fa-lg"><use xlink:href="<?php echo WEB_ROOT ?>img/feather-sprite.svg#map-pin"/></svg></div>
-                                            <div> Av. Argentina 5659, Villa Lugano, CABA, Argentina</div>
+                                            <div> CABA, Buenos Aires </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.287387681578!2d-58.48126552373975!3d-34.67269557292961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb3e55555555%3A0x1425b2dc1f285c1b!2sMixme!5e0!3m2!1ses!2sar!4v1701184704434!5m2!1ses!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
+                 </div>
             </div>
         </div>
         <div class="container py-4">

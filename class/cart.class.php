@@ -233,15 +233,15 @@ class Cart
 						<p>TOTAL <span>$'.number_format($total,2,',','.').'</span></p>
 					</div>';
 
-					if (isset($_SESSION['mayoristas']) && $total>50000) {
+					if (isset($_SESSION['mayoristas']) && $total>180000) {
 						echo '<div class="action-cart py-4">
 							<a href="'.WEB_ROOT.'checkout.php?step=1" class="btn btn-primary btn-lg rounded-pill">Comprar ahora!</a>
 							<button type="button" class="btn" data-dismiss="modal">¡Seguir mirando más!</button>
 						</div>';
-					} else if (isset($_SESSION['mayoristas']) && $total<50000) {
+					} else if (isset($_SESSION['mayoristas']) && $total<180000) {
 						echo '<div class="action-cart py-4">
 						<div class="alert alert-danger" role="alert">
-						La <strong>compra mínima</strong> mayorista es de <strong>$50.000</strong>.
+						La <strong>compra mínima</strong> mayorista es de <strong>$180.000</strong>.
 						</div>
 							<a href="'.WEB_ROOT.'checkout.php?step=1" class="btn btn-primary btn-lg rounded-pill disabled">Comprar ahora!</a>
 							<button type="button" class="btn" data-dismiss="modal">¡Seguir mirando más!</button>

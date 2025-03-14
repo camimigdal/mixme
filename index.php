@@ -41,6 +41,7 @@ if (!empty($_GET['salir'])) {
         <?php require_once("include/css.php") ?>    
         <?php require_once("include/favicon.php") ?>
         <?php require_once("include/scripts-head.php"); ?>
+        <link href="css/style.css" rel="stylesheet">
     </head>
 
     <body>
@@ -55,62 +56,54 @@ if (!empty($_GET['salir'])) {
         
 
         <section class="mezclador padding-section" id="mezclador">
-            <div class="container-fluid bg-mezclador">
+            <div class="container">
                 <div class="row">
-                    <div class="col-12 col-xl-10 offset-xl-1">
-                        <div class="row">
-                            <div class="col-12 pb-3">
-                                <h2 class="main_title">
-                                    <picture>
-                                        <source srcset="<?php echo WEB_ROOT ?>img/icon-mezclador.svg" height="80" media="(min-width: 600px)">
-                                        <img src="<?php echo WEB_ROOT ?>img/icon-mezclador.svg" alt="Mezclador" height="60" class="animate__animated animate__tada animate__infinite">
-                                    </picture>
-                                    Mezclador</h2>
+                    <div class="col-12">
+                        <h2>
+                            <img src="<?php echo WEB_ROOT ?>img/icon-mezclas.svg" alt="Nuestras mezclas" height="50" class="animate__animated animate__headShake animate__infinite">
+                            Creadores de sabores
+                        </h2>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card pack-card">
+                            <img src="<?php echo WEB_ROOT; ?>img/packs/pack1.jpg" alt="Pack 1" class="img-fluid">
+                            <div class="card-body text-center">
+                                <a href="<?php echo WEB_ROOT; ?>productos/especiados-en-doypacks-premium" class="btn btn-quiero">¡QUIERO!</a>
                             </div>
                         </div>
-                        <div class="row justify-content-center wrap-block">
-                            <div class="col-12 col-lg-10 wrap-fila">
-                                <div class="row">
-                                    <div class="col-12 col-lg-7">
-                                        <!-- <img src="img/poster-video.jpg" width="100%"> -->
-                                        <div class="container-iframe">
-                                            <iframe src="https://www.youtube.com/embed/EfeKXqXZElA" title="YouTube video player" frameborder="0" allowfullscreen class="video"></iframe>
-                                        </div>
-                                        <img src="img/info-nutricional.png" class="info mt-3">
-                                    </div>
-                                    <div class="col-12 col-lg-6 block-text-mixer">
-                                        <h3>Creá tu Mix</h3>
-                                        <p>Podés armar tu Mix de Granola, Frutos secos o Semillas. Es facil y rápido, mirá el video y enterate cómo armar el mix que más te guste.</p>
-                                        <a href="mixer/" class="btn btn-primary btn-lg rounded-pill">Ir al mezclador</a>
-                                    </div>
-                                </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card pack-card">
+                            <img src="<?php echo WEB_ROOT; ?>img/packs/pack2.jpg" alt="Pack 2" class="img-fluid">
+                            <div class="card-body text-center">
+                                <a href="<?php echo WEB_ROOT; ?>productos/pretzels-y-chocolates" class="btn btn-quiero">¡QUIERO!</a>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-12 pb-5">
-                                <h2 class="title-packs">Nuestros packs</h2>
-                            </div>
-                            <div class="col-12 pt-5 text-center wrap-car-packs">
-                                <div id="car-packs" class="owl-carousel owl-theme pt-5">
-                                    <picture>
-                                        <source srcset="<?php echo WEB_ROOT ?>img/packs/pack1.png" media="(min-width: 600px)">
-                                        <img src="<?php echo WEB_ROOT ?>img/packs/mobile/pack1.png" alt="Pack Mixme 1">
-                                    </picture>
-                                    <picture>
-                                        <source srcset="<?php echo WEB_ROOT ?>img/packs/pack2.png" media="(min-width: 600px)">
-                                        <img src="<?php echo WEB_ROOT ?>img/packs/mobile/pack2.png" alt="Pack Mixme 1">
-                                    </picture>
-                                    <picture>
-                                        <source srcset="<?php echo WEB_ROOT ?>img/packs/pack3.png" media="(min-width: 600px)">
-                                        <img src="<?php echo WEB_ROOT ?>img/packs/mobile/pack3.png" alt="Pack Mixme 1">
-                                    </picture>
-                                    <picture>
-                                        <source srcset="<?php echo WEB_ROOT ?>img/packs/pack4.png" media="(min-width: 600px)">
-                                        <img src="<?php echo WEB_ROOT ?>img/packs/mobile/pack4.png" alt="Pack Mixme 1">
-                                    </picture>
-                                </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card pack-card">
+                            <img src="<?php echo WEB_ROOT; ?>img/packs/pack3.jpg" alt="Pack 3" class="img-fluid">
+                            <div class="card-body text-center">
+                                <a href="<?php echo WEB_ROOT; ?>productos/boxes-especiales" class="btn btn-quiero">¡QUIERO!</a>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección About Us con borde curvo -->
+        <section class="about-us" id="about-us">
+            <div class="container-fluid p-0">
+                <div class="row no-gutters">
+                    <div class="col-md-6 about-text">
+                        <h2>About us</h2>
+                        <p>Somos una empresa dedicada a la creación de snacks premium. Nuestros productos están elaborados con ingredientes de alta calidad, seleccionados cuidadosamente para ofrecerte una experiencia única de sabor.</p>
+                        <p>En MixMe creemos que los pequeños momentos merecen grandes sabores. Por eso, cada uno de nuestros productos está pensado para acompañarte en esos instantes especiales.</p>
+                        <a href="<?php echo WEB_ROOT; ?>nosotros.php" class="btn btn-consulta">Conocenos más</a>
+                    </div>
+                    <div class="col-md-6 about-image">
+                        <!-- La imagen se maneja con CSS -->
                     </div>
                 </div>
             </div>

@@ -173,8 +173,7 @@ class mainClass {
 
 	public function Market()
 	{
-
-		$query="SELECT DISTINCT(pd_id), pd_alias, pd_titulo, pd_etiqueta, pd_descuento FROM `tbl_productos`
+		$query="SELECT DISTINCT pd_id, pd_alias, pd_titulo, pd_etiqueta, pd_descuento, pd_orden_dest FROM `tbl_productos`
 		LEFT JOIN tbl_productos_parent ON tbl_productos.pd_id = tbl_productos_parent.pr_producto 
 		WHERE pd_destacado='si' AND status='publicado'";
 
@@ -279,20 +278,19 @@ class mainClass {
 
 	public function ProductosHome()
 	{
-		$query="SELECT DISTINCT(pd_id), pd_alias, pd_titulo, pd_descuento FROM `tbl_productos`
+		$query="SELECT DISTINCT pd_id, pd_alias, pd_titulo, pd_descuento, pd_orden_exclusivo FROM `tbl_productos`
 		LEFT JOIN tbl_productos_parent ON tbl_productos.pd_id = tbl_productos_parent.pr_producto
 		WHERE status='publicado' AND pd_exclusivo='si' ";
-
+	
 		if(isset($_SESSION['mayoristas'])){	
 			$query .= " AND pd_mayorista=1";
 		} else {
 			$query .= " AND pd_mayorista=0";
 		}
-
+	
 		$query .= " ORDER BY pd_orden_exclusivo ASC";
-
+	
 		$result=mysqli_query($this->conn,"$query");
-        
 		
 		while($prod=$result->fetch_assoc())
 		{
@@ -1553,6 +1551,91 @@ class mainClass {
             }
         }
         return $this->arrDesc;
+    }
+
+    public function Destacados()
+    {
+        echo '<section class="destacados padding-section" id="destacados">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="main_title">Destacados</h2>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card text-center">
+                                <img src="'.WEB_ROOT.'img/destacados/facturacion.jpg" class="card-img-top" alt="Facturación">
+                                <div class="card-body">
+                                    <h3 class="card-title">Factura por primera vez</h3>
+                                    <p class="card-text">Crea facturas unificadas en pocos clicks. Plantillas de factura profesionales como tú.</p>
+                                    <a href="#" class="btn btn-primary">Crea tu primera factura</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card text-center">
+                                <img src="'.WEB_ROOT.'img/destacados/contabilidad.jpg" class="card-img-top" alt="Contabilidad">
+                                <div class="card-body">
+                                    <h3 class="card-title">Lleva tu contabilidad</h3>
+                                    <p class="card-text">Gestiona la contabilidad de tu empresa con un experto. Tus cuentas organizadas y disponibles en cualquier lugar.</p>
+                                    <a href="#" class="btn btn-primary">Más sobre Contabilidad</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card text-center">
+                                <img src="'.WEB_ROOT.'img/destacados/asesores.jpg" class="card-img-top" alt="Asesores">
+                                <div class="card-body">
+                                    <h3 class="card-title">Acceso para asesores</h3>
+                                    <p class="card-text">Únete a nuestra lista de asesores y gana clientes. Accede a los datos de tus clientes y gana en eficiencia.</p>
+                                    <a href="#" class="btn btn-primary">Más sobre Asesores</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </section>';
+    }
+
+    public function NuestrosPacks()
+    {
+        echo '<section class="nuestros-packs padding-section" id="packs">
+                <div class="container">
+                    <div class="row text-center">
+                        <div class="col-12">
+                            <h2 class="section-title">
+                                <img src="'.WEB_ROOT.'img/icons/pack-icon.png" alt="Creadores de sabores" class="icon-title">
+                                Creadores de sabores
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-4 mb-4">
+                            <div class="pack-card">
+                                <img src="'.WEB_ROOT.'img/packs/pack1.jpg" alt="Pack Salado" class="img-fluid">
+                                <div class="pack-footer">
+                                    <a href="#" class="btn btn-primary btn-quiero">¡QUIERO!</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mb-4">
+                            <div class="pack-card">
+                                <img src="'.WEB_ROOT.'img/packs/pack2.jpg" alt="Pack Mix" class="img-fluid">
+                                <div class="pack-footer">
+                                    <a href="#" class="btn btn-primary btn-quiero">¡QUIERO!</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mb-4">
+                            <div class="pack-card">
+                                <img src="'.WEB_ROOT.'img/packs/pack3.jpg" alt="Pack Dulce" class="img-fluid">
+                                <div class="pack-footer">
+                                    <a href="#" class="btn btn-primary btn-quiero">¡QUIERO!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </section>';
     }
 }
 

@@ -51,17 +51,17 @@
 
         <div class="header-content">
             <div class="logo-mobile mr-auto">
-                <a href="<?php echo WEB_ROOT ?>"><img src="<?php echo WEB_ROOT ?>img/mixme-logo.svg" alt="Mixme Logo"></a>
+                <img src="<?php echo WEB_ROOT ?>img/mixme-logo.svg" alt="Mixme Logo">
             </div>
             <div class="header-nav">
                 <nav class="d-lg-flex align-items-center justify-content-between">
                     <ul class="primary-nav">
-                        <li><a href="<?php echo WEB_ROOT ?>#productos"><img src="<?php echo WEB_ROOT ?>img/icon-mezclas.svg" alt="Nuestras mezclas" height="50"><span>Nuestras mezclas</span></a></li>
-                        <li><a href="<?php echo WEB_ROOT ?>mixer/" class="anim_mezclador"><img src="<?php echo WEB_ROOT ?>img/icon-mezclador.svg" alt="Mezclador" height="50"><span>Mezclador</span></a></li>
+                        <!-- <li><a href="<?php echo WEB_ROOT ?>#productos"><img src="<?php echo WEB_ROOT ?>img/icon-mezclas.svg" alt="Nuestras mezclas" height="50"><span>Nuestras mezclas</span></a></li> -->
+                        <li><a href="<?php echo WEB_ROOT ?>"><img src="<?php echo WEB_ROOT ?>img/home.svg" alt="Home" height="45"><span>Home</span></a></li>
                         <li><a href="<?php echo WEB_ROOT.'productos/' ?>"><img src="<?php echo WEB_ROOT ?>img/icon-market.svg" alt="Market" height="40"><span>Market</span></a></li>
-                    </ul>
+                        <li><a href="<?php echo WEB_ROOT ?>mixer/" class="anim_mezclador"><img src="<?php echo WEB_ROOT ?>img/icon-mezclador.svg" alt="Mezclador" height="50"><span>Mezclador</span></a></li>                    </ul>
                     <div class="logo mx-auto">
-                        <a href="<?php echo WEB_ROOT ?>"><img src="<?php echo WEB_ROOT ?>img/mixme-logo.svg" alt="Mixme Logo"></a>
+                        <img src="<?php echo WEB_ROOT ?>img/mixme-logo.svg" alt="Mixme Logo">
                     </div>
                     <ul class="primary-nav">
                         <li><a href="<?php echo WEB_ROOT ?>nosotros.php"><img src="<?php echo WEB_ROOT ?>img/icon-mixme.svg" alt="Nosotros" height="40"><span>Nosotros</span></a></li>
